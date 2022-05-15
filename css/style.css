@@ -15,21 +15,22 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 100%;
-	padding: 19px 0px;
+	padding: 19px 15px;
 }
 
 .container {
 	width: 100%;
-	max-width: 1210px;
+	max-width: 1240px;
 	margin: 0 auto;
+	overflow: auto;
 }
 
 .container-sm {
 	width: 100%;
-	max-width: 940px;
+	max-width: 970px;
 	margin: 0 auto;
 	display: block;
+	padding: 0px 15px;
 }
 
 .clearfix {
@@ -150,10 +151,9 @@ nav ul {
 }
 
 .header-form {
-	max-width: 390px;
-	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
 }
 
 .section1 {
@@ -231,7 +231,9 @@ nav ul {
 .writers {
 	background: url(../media/backwriters.png);
 	background-size: cover;
-	padding: 40px 155px 39px 55px;
+	width: 590px;
+	max-height: 305px;
+	padding: 40px 55px;
 	position: absolute;
 	right: 0px;
 	top: -112px;
@@ -327,25 +329,19 @@ nav ul {
 .section3 h2 span::before {
 	content: "";
 	background: #F55F39;
-	width: 100%;
 	position: absolute;
-	bottom: -20px;
-	left: 0;
+	top: 207px;
 	height: 4px;
+	width: 117px;
 
 }
 
 .section3 h2 span {
 	color: #F55F39;;
-	position: relative;
-	top: -50px;
-	left: 363px;
-	display: block;
-	width: 26%;
-}
+	}
 
 .section3 {
-	padding: 48px 0px;
+	padding: 96px 0px;
 	width: 100%;
 	max-width: 1440px;
 	position: relative;
@@ -370,9 +366,11 @@ nav ul {
 .text-blog-newest {
 	background: #FFFFFF;
 	width: 427px;
-	position: absolute;
 	z-index: 2;
-	top: 707px;
+	margin-top: 390px;
+	padding-bottom: 0px;
+	padding-top: 28px;
+	
 }
 
 .blog-newest-news h3 {
@@ -380,7 +378,6 @@ nav ul {
 	line-height: 38px;
 	color: #252061;
 	width: 314px;
-	margin-top: 28px;
 	margin-bottom: 13px;
 }
 
@@ -389,17 +386,20 @@ nav ul {
 	line-height: 23px;
 	color: #969696;
 	width: 377px;
-	margin-bottom: 13px;
 
 }
 
-p.RobertBrown{
+p.RobertBrown {
 	font-size: 13px;
 	line-height: 23px;
 	color: #252061;
 	position: relative;
 	top: -47px;
 	left: 54px;
+}
+
+.imgRoberBrown {
+	margin-top: 13px;
 }
 
 .recent1 {
@@ -431,7 +431,7 @@ justify-content: space-around;
 	width: 301px;
 	position: absolute;
 	z-index: 2;
-	top: 715px;
+	top: 617px;
 }
 
 .text-recent2 p {
@@ -451,10 +451,11 @@ p.blog-date {
 
 .visitBlog {	background: url(../media/backVector.jpg);
 	background-size: cover;
-	position: absolute;
 	width: 376px;
-	right: 162px;
-	top: 853px;
+	margin-top: 30px;
+	height: 240px;
+	margin-bottom: 30px;
+	margin-left: 30px;
 }
 
 .visitBlog h3 {
@@ -478,3 +479,157 @@ p.blog-date {
 	color: #F55F39;
 	padding: 0px 121px 26px 60px;
 }
+
+.section3 a {
+	text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+	.logo-wrap { 
+	left: calc(50% - 50px);
+}
+	.logo-wrap img{ 
+		width: 100px;
+	}
+	 nav li a {
+			margin-right: 10px;
+		}
+	.header-form input {
+			max-width: 190px;
+		}
+	.header-form label {
+			max-width: 200px;
+		}
+}
+
+@media (max-width: 1100px) {
+	.writers {
+		position: initial;
+		margin: 15px auto;
+	}
+}
+
+/* adaptive third block */
+@media (max-width: 1200px) { 
+	.section3 h2{
+		margin: 0 auto 73px;
+	}
+ }
+@media (max-width: 998px) { 
+	.blog-newest-news {
+		width: 400px;
+}
+	.section3-blog-wrap {
+		justify-content: center;
+	}
+}
+@media (max-width: 768px) { 
+	.blog-newest-news {
+		width: 60%;
+}
+	.blog-other-news {
+		width: 70%;
+	}
+	.blog-newest-news p {
+		width: 314px;
+	}
+	.section3-blog-wrap {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+ }
+
+	@media (max-width: 574px) { 
+		.section3 h2 {
+			font-size: 46px;
+		}
+		.blog-newest-news {
+			width: 60%;
+	}
+		.blog-other-news {
+			width: 40%;
+		}
+		.blog-newest-news p {
+			width: 50%;
+		}
+		.blog-newest-news p {
+			width: 77%;
+}
+		.recent1 {
+			height: 0px;
+		}
+		.section3-blog-wrap {
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+		.recent2 {
+			margin-top: 0px;
+			width: 76%;
+			height: 181px;
+		}
+		.text-recent2 {
+			top: 427px;
+		}
+	.text-recent2 p {
+		width: 180px;
+	}
+	.visitBlog {
+		width: 76%;
+		height: 450px;
+		margin-top: 140px;
+}
+}
+
+@media (max-width: 320px) { 
+	.section3-blog-wrap {
+		display: block;
+}
+	.section3 h2 {
+		font-size: 36px;
+		margin-top: 0px;
+		margin-right: 10px;
+		margin-bottom: 73px;
+		margin-left: 10px;
+		width: 270px;
+}
+.section3 h2 span::before {
+	top: 242px;
+	width: 75px;
+	left: 26px;
+}
+	.recent2 {
+		height: 0px;
+	}
+	.text-recent2 {
+		height: 0px;
+}
+.text-recent2 p{
+	height: 0px;
+	font-size: 0px;
+}
+.blog-newest-news {
+	width: 90%;
+	display: flex;
+}
+.blog-newest-news h3 {
+	width: 258px;
+}
+.visitBlog {
+	width: 278px;
+	margin-top: 105px;
+	margin-left: 0px;
+	text-align: center;
+	height: 281px;
+}
+.visitBlog h3 {
+	padding: 45px 35px 0px 35px;
+}
+.visitBlog p {
+	padding: 0px 35px 26px 35px;
+}
+.visitBlog h6 {
+	padding: 0px 35px 26px 35px;
+}
+}
+
+
